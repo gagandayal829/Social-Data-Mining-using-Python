@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Form</title>
+    <style>
+.container{
+    max-width:500px; margin: auto; padding: 100px; position: absolute; top: 50%; left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%); -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+    </style>
+</head>
+<body style="background-color:#000000;">
+<div class="container">
+    <form id="form2" action="/twitterUpdate" method="post">
+
+        <tr>
+        <div class="form-group">
+            <td>
+                <img src="https://i.ibb.co/MNGDV0M/Twitter.png"
+                     style="text-align:right display:inline" class="img-responsive img-circle margin" width="243" height="200">
+            </td>
+        </div>
+        <div class="form-group">
+            <td>
+                <textarea name="status" placeholder="What are you tweeting for today" form="form2" rows="6" cols="30"
+                          style="text-align:left" class="img-responsive img-circle margin" width="254" height="200"></textarea>
+            </td>
+        </div>
+        </tr>
+        <div>
+        <button type="submit" style="margin-auto:80px; width:243px">Submit Tweet</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
