@@ -21,7 +21,7 @@ def extract_tweets():
                   }
         tweet_list.append(status)
     print(tweet_list)
-    client = MongoClient("mongodb+srv://gagandayal:gagandeep123@gagandayal.otj9q.mongodb.net/twitter?ssl=true&ssl_cert_reqs=CERT_NONE")
+    client = MongoClient("mongodb+srv://gagan***:*****@*****.otj9q.mongodb.net/twitter?ssl=true&ssl_cert_reqs=CERT_NONE")
     db = client["DataMiningAssignment2"]
     collection = db["twitterData"]
     collection.insert_many(tweet_list)
