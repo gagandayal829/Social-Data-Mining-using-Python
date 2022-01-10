@@ -22,7 +22,7 @@ for post in redditAuth.redditor("gagandayal").submissions.new():
         "postScore": post.score
     }
     redditData.append(redditPosts)
-client = MongoClient("mongodb+srv://gagandayal:gagandeep123@gagandayal.otj9q.mongodb.net/twitter?ssl=true&ssl_cert_reqs=CERT_NONE")
+client = MongoClient("mongodb+srv://*****:*****@****.otj9q.mongodb.net/twitter?ssl=true&ssl_cert_reqs=CERT_NONE")
 db = client["DataMiningAssignment2"]
 collection = db["redditData"]
 collection.drop()
